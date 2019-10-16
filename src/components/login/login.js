@@ -9,27 +9,30 @@ function Login (props) {
 	    <div className="login-body">
 	      <p>{props.systemName}</p>
 	      <div className="login-content">
-	        <input type="text" placeholder="用户名" />
-	        <input type="password" placeholder="密码" />
-	        <div className="login-btn">
+	        <input ref='username' type="text" placeholder="用户名" />
+	        <input ref='password' type="password" placeholder="密码" />
+	        <div className="login-btn" onClick={() => this.handleLogin()}>
 	        登录
 	        </div>
 	      </div>
 	      <div id="clockWrap">
-	      	<Clock date={new Date()}/>
+	      	<Clock />
 	      </div>
 	    </div>
 	  </div>
 	)
 }
 
-function setTime () {
-	ReactDOM.render(
-  	<Clock />, 
-  	document.getElementById('clockWrap')
-	)
+function handleLogin () {
+	let username = this.refs.username.value
+	let password = this.refs.password.value
+	this.setState({
+		username: username,
+		password: password
+	})
+	console.log('user:' + this.state.username)
+	console.log('pass:' + this.state.password)
 }
 
-setInterval(setTime, 1000)
 
 export default Login
