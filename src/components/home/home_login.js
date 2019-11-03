@@ -2,7 +2,7 @@ import React from 'react';
 
 class HomeLogin extends React.Component {
 	constructor () {
-
+		super();
 	}
 
 	render () {
@@ -11,3 +11,5 @@ class HomeLogin extends React.Component {
 		)
 	}
 }
+
+export default HomeLogin

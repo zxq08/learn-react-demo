@@ -37,11 +37,12 @@ class Login extends React.Component {
 		event.preventDefault()
 		let username = this.state.username
 		let password = this.state.password
-		console.log(username + ',' + password)
 		if (username && password) {
 			if (username === this.state._username && password === this.state._password) {
 				// window.location = "https://www.baidu.com"
-				window.location = "../home/home_login"
+				setTimeout(() => {
+					window.open("http://localhost:3000/home/home_login")
+				}, 100)
 			}
 		} else {
 			alert('用户名或密码不能为空')

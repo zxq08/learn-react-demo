@@ -7,7 +7,7 @@
   width: 100%;
 }
 .login-body {
-  width: 20%;
+  width: 400px;
   color: #fff;
   font-size: 1.875vw;
   text-align: center;
@@ -17,13 +17,14 @@
   background-color: #fff;
   padding: 40px 30px;
   border-radius: 5px;
+  height: 200px;
 }
 .login-content input[type="text"],
 .login-content input[type="password"] 
 {
   display: block;
-  height: 1.875vw;
-  line-height: 1.875vw;
+  height: 40px;
+  line-height: 40px;
   border-radius: 5px;
   border: 1px solid #aaa;
   width: 96%;
@@ -33,13 +34,13 @@
 .login-btn {
   border: none;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   width: 100%;
-  height: 1.875vw;
-  line-height: 1.875vw;
+  height: 40px;
+  line-height: 40px;
   border-radius: 5px;
-  font-size: 1.15vw;
+  font-size: 1rem;
   background-color: #20a0ff;
   cursor: pointer;
 }
